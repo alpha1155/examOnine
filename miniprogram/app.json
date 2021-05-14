@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/checkMistakes/checkMistakes",
+    "pages/singleChoice/singleChoice",
+    "pages/multipleChoice/multipleChoice",
+    "pages/judge/judge",
+    "pages/random/random",
+    "pages/login/login",
+    "pages/rank/rank",
+    "pages/practiceRecods/practiceRecods",
+    "pages/mistakesSet/mistakesSet",
+    "pages/personalCenter/personalCenter",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "答题小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ffb965",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home81x81-2.png",
+      "selectedIconPath": "images/home81x81.png"
+    }, {
+      "pagePath": "pages/personalCenter/personalCenter",
+      "text": "我的",
+      "iconPath": "images/edit81x81-2.png",
+      "selectedIconPath": "images/edit81x81.png"
+    }]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

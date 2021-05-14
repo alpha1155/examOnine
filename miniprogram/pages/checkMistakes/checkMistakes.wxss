@@ -1,0 +1,8 @@
+.red{
+  color: red;
+}
+.but_root{
+  margin:30rpx;
+  display: flex;
+  justify-content: space-between;
+}

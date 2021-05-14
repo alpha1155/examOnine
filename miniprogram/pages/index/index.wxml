@@ -1,0 +1,4 @@
+<button type="primary" bindtap="singleChoice">单选挑战</button>
+<button type="primary" bindtap="multipleChoice">多选挑战</button>
+<button type="primary" bindtap="judge">判断挑战</button>
+<button type="primary" bindtap="random">随机挑战</button>

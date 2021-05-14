@@ -1,0 +1,31 @@
+.content{
+  background-color: #F5F5DC;
+}
+.menu{
+  background-color: lightcoral;
+  margin: 30rpx auto ;
+  width: 90%;
+  border: 2rpx solid lightslategrey ;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  position: relative;
+}
+.submit{
+  position: absolute;
+}
+.hr{
+  border: 2rpx solid #cccccc;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+/* .checkbox{
+  background-color: lightcoral;
+  color: lightcoral;
+
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+
+} */

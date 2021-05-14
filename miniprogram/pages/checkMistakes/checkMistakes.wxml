@@ -1,0 +1,30 @@
+
+<view wx:if="{{mistakesNum}}">
+  <view class="questionid"><text>第{{questionid+1}}题/共{{total}}题</text></view>
+  <view>{{subject.title}}</view>
+  <radio-group bindchange="radioChange">
+    <view wx:for="{{subject.options}}">
+      <radio value="{{item.code}}" checked="{{isSelected}}"/>
+      <!-- 类选择器 -->
+      <text class="{{subject.userSelect==item.code?'red':''}}">{{item.code}}:{{item.option}}</text>
+    </view>
+  </radio-group>
+  <!-- 1.选项 -->
+  <!-- <text>正确答案{{subject.answer}}</text> -->
+  <text>你选择了{{subject.userSelect}}</text>
+  <!-- 2.选项 -->
+  <view>
+    正确答案是
+    <text wx:for="{{subject.answer}}">{{item}}</text>
+  </view>
+  <view class="but_root">
+    <button bindtap="preMistakes" size="mini" type="primary">上一个错题</button>
+    <button bindtap="nextMistakes" size="mini" type="primary">下一个错题</button>
+  </view>
+</view>
+
+<view wx:else>
+  <button type="primary" bindtap="goto" >
+    返回个人中心
+  </button>
+</view>

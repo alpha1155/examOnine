@@ -1,0 +1,19 @@
+.questionid{
+  text-align: center;
+  height: 60rpx;
+  width: 100%;
+  background-color: #fff;
+}
+button{
+  
+  background-color:#1E9FFF;
+  color:#ffffff;
+}
+.backbutt{
+  margin:30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+progress{
+  margin:20rpx;
+}

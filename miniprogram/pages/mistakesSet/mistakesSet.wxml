@@ -1,0 +1,19 @@
+<view>最近5道错题</view>
+<view class="content">
+  <view class="menu" wx:for="{{questionList}}">
+    <view>类型：{{item.type}}</view>
+    <view>{{item.answer}}</view>
+    <view class="hr"></view>
+    <view>{{item.title}}</view>
+    <view class="hr"></view>
+    <checkbox-group bindchange="checkboxChange">
+      <view wx:for="{{item.options}}">
+        <!-- <checkbox value="{{item.code}}" checked="{{answer}}" color="#9ACD32" class="checkbox"/> -->
+        <text>{{item.code}}:{{item.option}}</text>
+        <view class="hr"></view>
+      </view>
+    </checkbox-group>
+    <!-- 已解决 -->
+    <button type="primary" size="mini" class="submit" bindtap="remove" id="{{item._id}}">移除错题集</button>
+  </view>
+</view>

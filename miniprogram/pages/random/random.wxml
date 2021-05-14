@@ -1,0 +1,21 @@
+<view class="questionid"><text>第{{questionid+1}}题/共3题</text></view>
+<progress percent="{{percent}}" show-info border-radius='20' stroke-width="20" />
+<view>类型：{{subject.type}}</view>
+<view>{{subject.title}}</view>
+<checkbox-group bindchange="checkboxChange">
+  <view wx:for="{{subject.options}}">
+    <checkbox value="{{item.code}}" checked="{{isSelected}}"/>
+    <text>{{item.code}}:{{item.option}}</text>
+  </view>
+</checkbox-group>
+<view class="backbutt">
+  <button bindtap="next" size="mini">下一题</button>
+  <button bindtap="submit" size="mini" >提交</button>
+</view>
+<button bindtap="showMistakes" size="mini" wx:if="{{showGotoMis}}" >查看错题</button>
+<view wx:if="{{showGotoMis}}">
+  <view>用户得分：{{totalScore}}</view>
+  <view>
+    答错了{{totalError}}道题
+  </view>
+</view>

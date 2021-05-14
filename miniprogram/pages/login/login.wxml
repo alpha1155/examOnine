@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="studentID">
+    <view class="title">学号:</view>
+    <view class="studentIDinput">
+      <input class="inpu" type="text" placeholder="13位学号" bindinput="getStudentID" maxlength="13" placeholder-style="color:#999999" />
+    </view>
+  </view>
+    <!-- 分割线 -->
+    <view class="hr"> </view>
+  <view class="password">
+    <view class="title">密码:</view>
+    <view class="passwordInput">
+    <input class="inpu" type="text" placeholder="8--12位数字或字母" password='true' bindinput="getPassword" maxlength="12" placeholder-style="color:#999999" />
+    </view>
+  </view>
+  <button type="primary" bindtap="login" class="button">登录</button>
+</view>

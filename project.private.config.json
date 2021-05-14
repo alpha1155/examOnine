@@ -1,0 +1,77 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/singleChoice/singleChoice",
+          "pathName": "pages/singleChoice/singleChoice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/multipleChoice/multipleChoice",
+          "pathName": "pages/multipleChoice/multipleChoice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/judge/judge",
+          "pathName": "pages/judge/judge",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/random/random",
+          "pathName": "pages/random/random",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personalCenter/personalCenter",
+          "pathName": "pages/personalCenter/personalCenter",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mistakesSet/mistakesSet",
+          "pathName": "pages/mistakesSet/mistakesSet",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personalCenter/personalCenter",
+          "pathName": "pages/personalCenter/personalCenter",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

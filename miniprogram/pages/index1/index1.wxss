@@ -1,0 +1,25 @@
+.questionid{
+  text-align: center;
+  height: 60rpx;
+  width: 100%;
+  background-color: #fff;
+}
+button{
+  
+  background-color:#1E9FFF;
+  color:#ffffff;
+}
+
+.butt{
+  width: 200rpx;
+  display: block;
+  float: left;
+  padding:10rpx ;
+ 
+}
+.backbutt{
+  float: left;
+}
+progress{
+  margin:20rpx;
+}

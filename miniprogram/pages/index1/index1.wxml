@@ -1,0 +1,22 @@
+<view class="questionid"><text>第{{serial}}题/共4题</text></view>
+<progress percent="{{percent}}" show-info border-radius='20' stroke-width="20" />
+<view>{{subject.title}}</view>
+<radio-group bindchange="radioChange">
+  <view wx:for="{{subject.options}}">
+    <radio value="{{item.code}}" checked="{{isSelected}}"/>
+    <text>{{item.code}}:{{item.option}}</text>
+  </view>
+</radio-group>
+<view class="backbutt">
+  <view class="butt"><button bindtap="submit"  size="mini">提交</button></view>
+  <view class="butt"><button bindtap="next" size="mini">下一题</button></view>
+</view>
+<button bindtap="showMistakes">查看错题</button>
+
+<view wx:if="{{totalScore>0}}">
+  <view>用户得分：{{totalScore}}</view>
+  <view>
+    答错了{{totalError}}道题
+    <text bindtap="seeError" wx:if="{{totalError>0}}">点击查看错题集</text>
+  </view>
+</view>

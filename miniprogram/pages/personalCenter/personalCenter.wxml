@@ -1,0 +1,65 @@
+<!-- 未登录 -->
+<view wx:if="{{!loginOK}}">
+  <button class="loginButton" bindtap="login" type="primary">登录</button>
+  <button class="registerButton" bindtap="register" type="primary">注册</button>
+</view>
+<!-- 登录 -->
+<view class="page-info" wx:else>
+    <!-- <view class="header">
+        <view class="avatar"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="nickname"><open-data type="userNickName"></open-data></view>
+    </view> -->
+    <view class="header" >
+        <view class="avatar"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="nickname">
+            {{userNmae}}
+        </view>
+    </view>
+    <view class="menus">
+        <view class="menu" bindtap="bindMyHistory" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/recordicon.png"></image>
+            <text class="title">答题记录</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindMyStudy" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/listicon.png"></image>
+            <text class="title">错题记录</text>
+            </view>
+            <view class="arraw">></view>
+        </view>   
+        <view class="menu" bindtap="bindgoabout" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/loveicon.png"></image>
+            <text class="title">积分排名</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindgorule" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/lookicon.png"></image>
+            <text class="title">使用说明</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindgopay" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/moneyicon.png"></image>
+            <text class="title">帮助支持</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindgoabout" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/loveicon.png"></image>
+            <text class="title">关于我们</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+    </view>
+    <view>
+        <button bindtap="exit" type="primary" class="exitButton">退出</button>
+    </view>
+</view>
